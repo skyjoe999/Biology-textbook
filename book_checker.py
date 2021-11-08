@@ -32,12 +32,17 @@ print('''
 		</style>
 	</head>
 	<body>
+		<p>
+			<div style="color: white; font-weight: 800; font-size: xxx-large;">Principles of Life</div>
+			<div style="color: white; font-weight: 800; font-size: x-large; padding-left: 20px;">2nd Edition</div>
+			<hr>
+		</p>
 		<table>''')
 for c,s in enumerate(chapter_count[:]):
 
 	print('\t'*3+'<tr><td><a target="_blank" href="https://www.macmillanhighered.com/BrainHoney/Resource/6716/digital_first_content/trunk/test/hillis2e/hillis2e_ch'+('0'+str(c+1))[-2:]+'_1.html">Chapter '+str(c+1)+'</a><table><tr>')
 	for i in range(1,s):
-		print('\t'*4+'<td><a target="_blank" href="https://www.macmillanhighered.com/BrainHoney/Resource/6716/digital_first_content/trunk/test/hillis2e/hillis2e_ch'+('0'+str(c+1))[-2:]+'_'+str(i+1)+'.html"">'+str(c+1)+'.'+str(i)+'</a></td>')
+		print('\t'*4+'<td><a target="_blank" href="https://www.macmillanhighered.com/BrainHoney/Resource/6716/digital_first_content/trunk/test/hillis2e/hillis2e_ch'+('0'+str(c+1))[-2:]+'_'+str(i+1)+'.html">'+str(c+1)+'.'+str(i)+'</a></td>')
 	print('\t'*3+'</tr></table></td></tr>')
 
 
