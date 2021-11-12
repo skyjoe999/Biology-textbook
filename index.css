@@ -50,3 +50,6 @@ div.chapter:hover div.concepts{
 a.concept {
 	display: block;
 }
+div.bottom_spacer{
+	margin: 150px 0px;
+}
