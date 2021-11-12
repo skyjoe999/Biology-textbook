@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="no-js">
+	<head>
+		<meta charset="utf-8">
+		<title>Bio book Table of Contents</title>
+		<link href="./index.css" media="screen" rel="stylesheet" type="text/css" >
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Open+Sans:400italic,700italic,400,700" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="page">
+			<div class="header">
+				Principles of Life
+				<p class="subheader">2nd Edition</p>
+			</div>
+			<div class="chapters">%chapters%{
+				<div class="chapter">
+					<a href="./chapters/ch%chapter_number%/intro/intro.html" target="_blank"><b>Chapter %chapter_number%:</b> %chapter_title%</a>
+					<div class="concepts">%concepts%{
+						<a href="https://www.macmillanhighered.com/BrainHoney/Resource/6716/digital_first_content/trunk/test/hillis2e/hillis2e_ch%chapter_id%_%concept_id%.html" target="_blank" class="concept"><b>%bold%</b> %concept_title%</a>}%concepts%
+					</div>
+				</div>}%chapters%
+			</div>
+		</div>
+	</body>
+</html>

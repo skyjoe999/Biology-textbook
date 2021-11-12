@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<title>Bio book ch%c% intro</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="../../intro.css" media="screen" rel="stylesheet" type="text/css" >
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Open+Sans:400italic,700italic,400,700" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="section">
+			<table>
+				<tbody>
+					<tr class="header">
+						<td class="chapter_number">%c%</td>
+						<td class="chapter_title">%title%</td>
+					</tr>
+					<tr>
+						<td class="key_concepts">
+							<div>
+								KEY CONCEPTS%sections%{
+								<p><a target="_blank" href="https://www.macmillanhighered.com/BrainHoney/Resource/6716/digital_first_content/trunk/test/hillis2e/hillis2e_ch%c0%_%2%.html">%c%.%0%</a>%1%</p>}
+							</div>
+						</td>
+						<td class="opening_image">
+							<img src="./%img1%">
+							<div>%imgCap%</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>%paragraphs%{
+			<p%1%>%0%</p>}%if question%{
+			<div class="question">
+				<span class="q"><span><span>Q</span></span></span>
+				<span><p>%0%</p></span>
+			</div>
+			<div class="question_text">You will find the answer to this question in <a href="https://www.macmillanhighered.com/BrainHoney/Resource/6716/digital_first_content/trunk/test/hillis2e/hillis2e_ch%c0%_%2%.html">Section %c%.%1%</a>.</div>}
+		</div>
+		<a class="next" href="https://www.macmillanhighered.com/BrainHoney/Resource/6716/digital_first_content/trunk/test/hillis2e/hillis2e_ch%c0%_2.html">Next</a>
+		<br>
+	</body>
+</html>
