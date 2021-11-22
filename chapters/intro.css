@@ -5,6 +5,7 @@ body {
 }
 a {
 	text-decoration-line: none;
+	color:inherit;
 }
 a:hover{
 	text-decoration-line: underline;
@@ -115,11 +116,9 @@ td.opening_image div strong {
 div.section > p > span.first_letter {
 	color: #4895CA;
 	font-size: 42px;
-	top: 8.4px;
 	margin-bottom: 1px;
 	float: left;
-	display: inline;
-	position: relative;
+	line-height: 35px;
 }
 a.next {
 	margin: 0px 0px 0px 50px;
@@ -178,4 +177,33 @@ div.question_text {
 div.question_text a {
 	color: #003;
 	font-weight: bold;
+}
+div.sidebar {
+	position: sticky;
+	top: 10px;
+	float: left;
+}
+div.sidebar_button {
+	cursor: pointer;
+	font-size: 31px;
+	color: #66f;
+	line-height: 24px;
+	position: absolute;
+	width: max-content;
+}
+div.sidebar_drop {
+	float: right;
+	font-size: 13px;
+	background: #ddd;
+	padding: 0px 10px;
+	color: #33c;
+	font-family: 'Lato', sans-serif;
+	border-radius: 5px;
+	display: none;
+}
+div.sidebar_button:hover div.sidebar_drop {
+	display: block;
+}
+div.sidebar_drop > a {
+	display: block;
 }
